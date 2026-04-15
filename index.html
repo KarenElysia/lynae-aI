@@ -1,17 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Title Here</title>
-    <style>
-        body {
-            background-image: url('your-image-url-here');
-            background-position: center top;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リンネーの放課後相談室</title>
+  <style>
+    body {
+      background-image: url('https://pbs.twimg.com/media/G8nL3PlbMAAuFx3?format=jpg&name=large');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center top;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
+
 <body>
+
+<div style="max-width:500px; margin:auto; padding:20px; background-color: rgba(255, 255, 255, 0.95); border-radius: 10px; margin-top: 20px; margin-bottom: 20px;">
+
+  <h1>リンネーの放課後相談室</h1>
+
+  <p>
+    授業おわり、チャイム代わりにここに集合〜！<br>
+    リンネーが、鳴潮の攻略から日常のモヤモヤまで、<br>
+    一緒に整理していくゆるい部室みたいな場所だよ。
+  </p>
+
+  <p style="font-size: 0.9em; color: gray;">
+    ここでの会話は、あたしとキミだけのエンタメ専用モード。<br>
+    本編とは切り離して、軽いノリで楽しんでもらえたらうれしいな。
+  </p>
+
+  <div id="quickchat-embedded" style="height:400px; overflow:auto; margin-top:20px;"></div>
+
+</div>
+
+<script>
+(function(e,a,d,i,c,t=a.createElement(d)){ 
+  e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},
+  t.src=i,
+  t.async=1,
+  a.body.appendChild(t)
+})(window,document,"script","https://bubble.quickchat.ai/chat.js","_quickchat");
+
+_quickchat("containerId", "quickchat-embedded");
+_quickchat("init", "502etg37xf", { showBranding: false });
+</script>
 
 </body>
 </html>
